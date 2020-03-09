@@ -1,0 +1,27 @@
+{
+    "name": "language-hsp3-constant",
+    "displayName": "language-hsp3-constant",
+    "description": "extended Win32API constant highlighting for language-hsp3",
+    "version": "1.0.1",
+    "repository": "https://github.com/UMAGODi/vscode-language-hsp3-constant",
+    "publisher": "UMAGODi",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "hsp3",
+            "aliases": ["HSP3", "hsp3"],
+            "extensions": [".hsp",".as"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "hsp3",
+            "scopeName": "source.hsp3-constant",
+            "path": "./syntaxes/hsp3.tmLanguage.json"
+        }]
+    }
+}
